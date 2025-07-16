@@ -1,0 +1,126 @@
+<!-- views/robotics.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IT Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    body {
+      background: #f5f5ff;
+    }
+    .dashboard-title {
+      color: #4a4a4a;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .card-link:hover .card {
+      transform: scale(1.03);
+      transition: 0.3s ease;
+    }
+    .card {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      height: 100%;
+    }
+    .card-image img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <strong>IT Dashboard</strong>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title dashboard-title">Welcome to the IT Section</h1>
+
+      <div class="columns is-multiline">
+
+        <!-- Projects -->
+        <div class="column is-one-quarter">
+          <a href="/it/projects" class="card-link">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://source.unsplash.com/400x300/?robotics,project" alt="Projects">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-5">Projects</p>
+                <p>Explore ongoing and past IT projects.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Research -->
+        <div class="column is-one-quarter">
+          <a href="/it/research" class="card-link">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://source.unsplash.com/400x300/?ai,research" alt="Research">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-5">Research</p>
+                <p>Access IT research resources.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Members -->
+        <div class="column is-one-quarter">
+          <a href="/it/members" class="card-link">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://source.unsplash.com/400x300/?team,engineering" alt="Members">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-5">Members</p>
+                <p>Meet the IT team members.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Reports -->
+        <div class="column is-one-quarter">
+          <a href="/it/reports" class="card-link">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://source.unsplash.com/400x300/?report,data" alt="Reports">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-5">Reports</p>
+                <p>Review performance and progress reports.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>

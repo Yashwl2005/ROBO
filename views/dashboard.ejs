@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Futuristic Cards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      padding: 2rem;
+      min-height: 100vh;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #1f1f2e;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+    }
+    .card-content {
+      color: white;
+    }
+    .tag {
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 20px;
+    }
+    .image img {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="columns is-multiline is-variable is-6 is-centered">
+
+    <!-- IT Card -->
+    <div class="column is-6-tablet is-3-desktop">
+      <a href="/it" class="card-link">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://source.unsplash.com/featured/?technology" alt="IT" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <span class="tag is-info is-light">IT</span>
+            <h3 class="title is-5 mt-3">Future of IT</h3>
+            <p>Explore cutting-edge software and system innovations shaping tomorrow’s tech world.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Robotics Card -->
+    <div class="column is-6-tablet is-3-desktop">
+      <a href="/robotics" class="card-link">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://source.unsplash.com/featured/?robotics" alt="Robotics" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <span class="tag is-danger is-light">Robotics</span>
+            <h3 class="title is-5 mt-3">Smart Robots</h3>
+            <p>Dive into automation, humanoids, and machine intelligence revolutionizing our world.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- AI Card -->
+    <div class="column is-6-tablet is-3-desktop">
+      <a href="/mou" class="card-link">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://source.unsplash.com/featured/?mou" alt="MOU" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <span class="tag is-primary is-light">MOU</span>
+            <h3 class="title is-5 mt-3">Memorandum of Understanding</h3>
+            <p>From ChatGPT to neural networks — explore the future of machine learning and smart systems.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Cybersecurity Card -->
+    <div class="column is-6-tablet is-3-desktop">
+      <a href="/bdo" class="card-link">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://source.unsplash.com/featured/?bdo" alt="BDO" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <span class="tag is-warning is-light">BDO</span>
+            <h3 class="title is-5 mt-3">Business Development Opportunities</h3>
+            <p>Learn how experts protect data, systems, and nations in a hyperconnected world.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sections</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #1a1a40, #000000);
+      color: white;
+    }
+    .card {
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    }
+    .card-image img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <div class="container has-text-centered">
+      <h1 class="title has-text-white">Welcome to <%= user %></h1>
+
+      <div class="columns is-multiline mt-5">
+        <!-- IT Card -->
+        <div class="column is-3">
+          <a href="/it">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="https://stock.adobe.com/search?k=information+technology" alt="IT">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-5">IT & Cyber Security</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Robotics Card -->
+        <div class="column is-3">
+          <a href="/robotics">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="https://www.istockphoto.com/photos/robot" alt="Robotics">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-5">Robotics & AI</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- MOU Card -->
+        <div class="column is-3">
+          <a href="/mou">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="https://www.shutterstock.com/search/mou" alt="MOU">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-5">MOU Section</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- BDO Card -->
+        <div class="column is-3">
+          <a href="/bdo">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="https://stock.adobe.com/search?k=bdo" alt="BDO">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-5">BDO Section</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
